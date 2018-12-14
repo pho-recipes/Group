@@ -1,0 +1,9 @@
+# pho-graphql-v1
+
+type Star implements SubscribeEdge 
+@nodes(head:"Page", tail:"User")
+@properties(binding: false, persistent: true, consumer: true, multiplicable: false)
+@labels(headSingular:"starred", headPlural: "starreds", tailSingular: "starrer", tailPlural: "starrers")
+{
+    id: ID!
+}

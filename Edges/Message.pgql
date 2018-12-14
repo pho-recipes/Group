@@ -1,0 +1,17 @@
+# pho-graphql-v1
+
+type Message implements MentionEdge 
+@nodes(tail:"User", head:"User")
+@properties(binding: false, persistent: true, consumer: false, multiplicable: true)
+@labels(
+    headSingular:"messageRecipient", headPlural: "messageRecipients", 
+    tailSingular: "messageSender", tailPlural: "messageSenders",
+    headCallableSingular: "incomingMessage", headCallablePlural: "incomingMessages",
+    tailCallableSingular: "sentMessage", tailCallablePlural: "sentMessages"
+)
+{
+    id: ID!,
+    content: String! @constraints(maxLength: 255), # twitter no longer has a limit on the characters, but we keep it for scalability.
+    sent_time: Date! @now
+    is_read: Boolean @default(Boolean: false)
+}

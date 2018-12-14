@@ -1,0 +1,16 @@
+# pho-graphql-v1
+
+type Create implements WriteEdge 
+@nodes(head:"Group", tail:"User")
+@properties(binding: true, persistent: true, consumer: true, formative: true, multiplicable: false)
+@labels(
+    headSingular:"group", 
+    headPlural: "groups", 
+    tailSingular: "creator", 
+    tailPlural: "creators",
+    feedSimple: "[%tail.username%|%tail.id%] created a new group called [%head.title%|%head.id%]",
+    feedAggregated: "%tail.username% created new groups"
+)
+{
+    id: ID!
+}

@@ -1,0 +1,18 @@
+# pho-graphql-v1
+
+type Reply implements SubscribeEdge
+@nodes(head:"Thread", tail:"User")
+@properties(binding: false, persistent: true, consumer: false, formative: false, multiplicable: true)
+@labels(
+    headSingular:"thread", headPlural: "threads", 
+    tailSingular: "author", tailPlural: "authors",
+    headCallableSingular: "reply", headCallablePlural: "replies",
+    tailCallableSingular: "threadReply", tailCallablePlural: "threadReplies",
+    feedSimple: "[%tail.username%|%tail.id%] replied the thread [%head.title%|%head.id%]",
+    feedAggregated: "%tail.username% replied some threads"
+)
+{
+    id: ID!
+    content: String!
+    reply_time: Date! @now
+}

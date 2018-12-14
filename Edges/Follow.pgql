@@ -1,0 +1,16 @@
+# pho-graphql-v1
+
+type Follow implements SubscribeEdge 
+@nodes(head:"User", tail:"User")
+@properties(binding: false, persistent: true, consumer: true, formative: false, multiplicable: false)
+@labels(
+    headSingular:"follow", 
+    headPlural: "follows", 
+    tailSingular: "follower", 
+    tailPlural: "followers",
+    feedSimple: "[%tail.username%|%tail.id%] followed [%head.username%|%head.id%]",
+    feedAggregated: "%tail.username% followed %head.username%"
+)
+{
+    id: ID!
+}

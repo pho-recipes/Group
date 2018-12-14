@@ -1,0 +1,14 @@
+# pho-graphql-v1
+
+type Thread implements ObjectNode 
+@edges(
+    in:"User:Start, User:Reply, User:Consume"
+)
+@permissions(mod: "0x0f754", mask: "0xfffff") 
+@properties(editable: true, volatile: false, revisionable: false)
+{
+    id: ID!,
+    create_time: Date! @now
+    title: String! @constraints(maxLength:80),
+    content: String!
+}

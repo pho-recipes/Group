@@ -1,0 +1,10 @@
+# pho-graphql-v1
+
+type Site implements GraphNode 
+@permissions(mod: "0x0f751", mask: "0xfffff") # people outside can't read.
+{
+    id: ID,
+    founder: User!,
+    comments_moderated: Boolean @default(Boolean: false),
+    comments_anonymous: Boolean @default(Boolean: false)
+}

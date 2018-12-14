@@ -1,0 +1,21 @@
+# pho-graphql-v1
+
+type User implements ActorNode 
+@edges(
+    in:"User:Follow, User:Consume, User:Message", 
+    out:"Post, Star, Comment, Consume, Message, Create, Follow, Start, Reply"
+)
+@permissions(mod: "0x07554", mask: "0xfffff") # user themselves, can manage, members can subscribe, outsiders can just read.
+@properties(editable: false, volatile: false, revisionable: false)
+@feed(simple: "%username% has joined", aggregated: "%username% have joined")
+{
+    id: ID!,
+    username: String! @unique @constraints(regex: "/^[ _[:alnum:]]{1,36}$/u"),
+    email: String! @unique @constraints(format: "email"),
+    password: String! @md5 @constraints(regex: "/^[0-9A-Za-z!@#$%_]{5,255}$/"),
+    join_time: Date! @now,
+    avatar: String @constraints(format: "url") @default(String: ""),
+    birthday: Date @default(String: "01/15/1983"),
+    about: String @constraints(maxLength: 255) @default(String: ""),
+    is_editor: Boolean @default(Boolean: false)
+}

@@ -1,0 +1,14 @@
+# pho-graphql-v1
+
+type Page implements ObjectNode 
+@edges(
+    in:"User:Comment, User:Star, User:Post, User:Consume"
+)
+@permissions(mod: "0x0f754", mask: "0xfffff") 
+@properties(editable: true, volatile: false, revisionable: false)
+{
+    id: ID!,
+    create_time: Date! @now
+    url: String! @unique @constraints(format: "url")
+    title: String
+}
