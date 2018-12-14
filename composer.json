@@ -1,7 +1,7 @@
 {
-  "name": "pho-recipes/web",
+  "name": "pho-recipes/network",
   "type": "project",
-  "description": "A web site graph in Pho",
+  "description": "A social network graph in Pho (made for Grou.ps v2)",
   "homepage": "https://phonetworks.org",
   "license": "MIT",
   "authors": [
