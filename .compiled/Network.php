@@ -15,7 +15,7 @@ use Pho\Kernel\Foundation;
  * For more information, visit http://phonetworks.org
  ******************************************************/
 
-class Site extends Foundation\AbstractGraphDP {
+class Network extends Foundation\AbstractGraphDP {
 
     const T_EDITABLE = false;
     const T_PERSISTENT = true;
@@ -44,8 +44,8 @@ class Site extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1542832587
- * Size (in bytes): 2331
- * Compilation Time: 107
- * ffd8abecf91ef7ff4854bee5c868660f
+ * Timestamp: 1544779572
+ * Size (in bytes): 2334
+ * Compilation Time: 118
+ * f1d2a9c757cb9017781c325473dfb369
  ******************************************************/

@@ -1,6 +1,6 @@
 # pho-graphql-v1
 
-type Site implements GraphNode 
+type Network implements GraphNode 
 @permissions(mod: "0x0f751", mask: "0xfffff") # people outside can't read.
 {
     id: ID,
