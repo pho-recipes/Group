@@ -53,12 +53,15 @@ class StarPredicate extends Foundation\ActorOut\SubscribePredicate
     const T_PERSISTENT = true;
 }
 /* Notification to load if it's a subtype of write or mention. */
+class StarNotification extends Foundation\ActorOut\SubscribeNotification
+{
 
+}
 }
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1547
- * Compilation Time: 62
- * 32cd99af7ba4b753f255f32a273a7b9c
+ * Size (in bytes): 1624
+ * Compilation Time: 60
+ * 883a2107f885e80e4058cc49bc330f02
  ******************************************************/

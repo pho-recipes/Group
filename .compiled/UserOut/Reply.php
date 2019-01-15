@@ -54,12 +54,15 @@ class ReplyPredicate extends Foundation\ActorOut\SubscribePredicate
     const T_PERSISTENT = true;
 }
 /* Notification to load if it's a subtype of write or mention. */
+class ReplyNotification extends Foundation\ActorOut\SubscribeNotification
+{
 
+}
 }
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 2254
- * Compilation Time: 60
- * 4c8b491e3e44bfaafaffbf612c84b2f8
+ * Size (in bytes): 2332
+ * Compilation Time: 58
+ * e1f56dbe6ddc861a52dcc6720db3ce1c
  ******************************************************/
