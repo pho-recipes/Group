@@ -5,6 +5,7 @@ type Network implements GraphNode
 {
     id: ID,
     founder: User!,
+    about: String @default(String: ""),
     comments_moderated: Boolean @default(Boolean: false),
     comments_anonymous: Boolean @default(Boolean: false)
 }
