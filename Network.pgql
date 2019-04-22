@@ -7,5 +7,6 @@ type Network implements GraphNode
     founder: User!,
     about: String @default(String: ""),
     comments_moderated: Boolean @default(Boolean: false),
-    comments_anonymous: Boolean @default(Boolean: false)
+    comments_anonymous: Boolean @default(Boolean: false),
+    anonymous_users: Boolean @default(Boolean: false)
 }
