@@ -18,4 +18,8 @@ type User implements ActorNode
     birthday: Date @default(String: "01/15/1983"),
     about: String @constraints(maxLength: 255) @default(String: ""),
     is_editor: Boolean @default(Boolean: true)
+    custom_field1: String @default(String: ""),
+    custom_field2: String @default(String: ""),
+    custom_field3: String @default(String: ""),
+    pending: Boolean @default(Boolean: false)
 }

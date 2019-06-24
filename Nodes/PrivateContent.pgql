@@ -1,0 +1,13 @@
+# pho-graphql-v1
+
+type PrivateContent implements ObjectNode 
+@edges(
+    in:"User:Post, User:Consume"
+)
+@permissions(mod: "0x0f750", mask: "0xfffff") 
+@properties(editable: true, volatile: false, revisionable: false)
+{
+    id: ID!,
+    create_time: Date! @now
+    content: String!
+}
