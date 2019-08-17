@@ -63,6 +63,6 @@ class CommentNotification extends Foundation\ActorOut\SubscribeNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 2644
- * Compilation Time: 25
- * 1bfb4fe220d86a7bc92d83245c0853e9
+ * Compilation Time: 19
+ * 174d576f90ecc53ed68b568b9326b17a
  ******************************************************/

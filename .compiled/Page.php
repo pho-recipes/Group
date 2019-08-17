@@ -36,7 +36,6 @@ class Page extends Foundation\AbstractObjectDP {
         $this->registerIncomingEdges(UserOut\Star::class);
         $this->registerIncomingEdges(UserOut\Post::class);
         $this->registerIncomingEdges(UserOut\Consume::class);
-        $this->registerIncomingEdges(UserOut\Pin::class);
         parent::__construct($kernel, $actor, $graph);
                 $this->setCreateTime(time(), true);
         $this->setUrl($url, true);
@@ -49,8 +48,8 @@ class Page extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1566023046
- * Size (in bytes): 2522
- * Compilation Time: 34
- * e07d87fdee92231b1120f390f7e5476b
+ * Timestamp: 1566024697
+ * Size (in bytes): 2464
+ * Compilation Time: 29
+ * 56ff954e5590a8bb493933de298ab1cf
  ******************************************************/
