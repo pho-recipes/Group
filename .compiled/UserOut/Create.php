@@ -62,6 +62,6 @@ class CreateNotification extends Foundation\ActorOut\WriteNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1682
- * Compilation Time: 23
- * a8997799d4f12b7663d11ce22d7452b1
+ * Compilation Time: 18
+ * 75072f839829d2a3f06492e7c4f4728a
  ******************************************************/
