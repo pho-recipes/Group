@@ -3,7 +3,7 @@
 type User implements ActorNode 
 @edges(
     in:"User:Follow, User:Consume, User:Message", 
-    out:"Post, Star, Comment, Consume, Message, Create, Follow, Start, Reply"
+    out:"Post, Star, Comment, Consume, Message, Create, Follow, Start, Reply, Pin"
 )
 @permissions(mod: "0x07554", mask: "0xfffff") # user themselves, can manage, members can subscribe, outsiders can just read.
 @properties(editable: false, volatile: false, revisionable: false)
