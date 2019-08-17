@@ -63,6 +63,6 @@ class MessageNotification extends Foundation\ObjectOut\MentionNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 2543
- * Compilation Time: 19
- * aa06151f2168cdc2e8639802d04aef29
+ * Compilation Time: 29
+ * 8ad919cf81288ea176645adc75cf8182
  ******************************************************/
