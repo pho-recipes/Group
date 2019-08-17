@@ -6,4 +6,5 @@ type Post implements WriteEdge
 @labels(headSingular:"post", headPlural: "posts", tailSingular: "author", tailPlural: "authors")
 {
     id: ID!
+    is_pinned:  Boolean @default(Boolean: false)
 }

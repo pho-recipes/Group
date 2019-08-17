@@ -1,9 +1,0 @@
-# pho-graphql-v1
-
-type Pin implements SubscribeEdge 
-@nodes(head:"Page", tail:"User")
-@properties(binding: false, persistent: true, consumer: true, multiplicable: false)
-@labels(headSingular:"pin", headPlural: "pins", tailSingular: "pinner", tailPlural: "pinners")
-{
-    id: ID!
-}

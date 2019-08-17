@@ -2,7 +2,7 @@
 
 type Page implements ObjectNode 
 @edges(
-    in:"User:Comment, User:Star, User:Post, User:Consume, User:Pin"
+    in:"User:Comment, User:Star, User:Post, User:Consume"
 )
 @permissions(mod: "0x0f754", mask: "0xfffff") 
 @properties(editable: true, volatile: false, revisionable: false)
