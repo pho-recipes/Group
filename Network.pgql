@@ -6,7 +6,16 @@ type Network implements GraphNode
     id: ID,
     founder: User!,
     about: String @default(String: ""),
-    comments_moderated: Boolean @default(Boolean: false),
-    comments_anonymous: Boolean @default(Boolean: false),
-    anonymous_users: Boolean @default(Boolean: false)
+    comments_moderated: Boolean! @default(Boolean: false),
+    comments_anonymous: Boolean! @default(Boolean: false),
+    anonymous_users: Boolean @default(Boolean: false),
+    verification_required: Boolean! @default(Boolean: false),
+    membership_moderated: Boolean! @default(Boolean: false),
+    custom_field1: String! @default(String: ""),
+    custom_field1_must: Boolean! @default(Boolean: false),
+    custom_field2: String! @default(String: ""),
+    custom_field2_must: Boolean! @default(Boolean: false),
+    custom_field3: String! @default(String: ""),
+    custom_field3_must: Boolean! @default(Boolean: false),
+    read_only: Boolean @default(Boolean: false)
 }
