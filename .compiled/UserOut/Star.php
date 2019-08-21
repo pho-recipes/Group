@@ -62,6 +62,6 @@ class StarNotification extends Foundation\ActorOut\SubscribeNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1624
- * Compilation Time: 27
- * 65b84305c6e2ed1096feffb8e15c6d03
+ * Compilation Time: 42
+ * 0374dbcc889702606a136c8e08bf4df9
  ******************************************************/
